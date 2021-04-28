@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.sliderCarousel {
+  display: flex;
+  /* justify-content: space-evenly; */
+  overflow: hidden;
+  /* overflow-x: auto; */
+  width: 96rem;
+  margin: 0 auto;
+
+  position: relative;
+  transition: 1s all ease;
+  white-space: nowrap;
+}
+
+.itemSlider {
+  width: 30rem;
+  margin: 1rem;
+  z-index: 10;
+  transition: 1s all ease;
+  cursor: pointer;
+}
+
+.btn {
+  z-index: 9999;
+  position: absolute;
+  padding: 1rem 1.5rem;
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  transition: 0.2 all ease;
+}
+
+.js-btnNext {
+  top: 60%;
+  right: 2%;
+  background-image: url(./next.png);
+}
+
+.js-btnPrev {
+  top: 60%;
+  left: 2%;
+  background-image: url(./next.png);
+
+  transform: rotate(180deg);
+}
+
+.sliderBlockAll {
+  position: relative;
+  width: 110rem;
+  margin: 2rem auto;
+  height: 15rem;
+}
+
+.btn:active {
+  background-color: blueviolet;
+}
+
+.imgLarge {
+  display: block;
+  margin: 2rem auto;
+  width: 40%;
+  -webkit-box-shadow: 2px 2px 55px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 55px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 55px 0px rgba(0, 0, 0, 0.75);
+  transition: 1s ease;
+}
+
+.radioSelectImg {
+  z-index: 999;
+  width: 25rem;
+  margin: 8rem auto 5rem auto;
+}
+
+.radioSelect {
+  margin: 0.5rem;
+}
